@@ -5,16 +5,13 @@
 ### Create stack
 
 ```
-terraform apply
+$ terraform apply
+yes
 ```
-
-This script will create:
--   2 vpc
--   4 subnet
--   10 instance
 
 ### Delete stack
 
 ```
-terraform destroy
+$ terraform destroy
+yes
 ```

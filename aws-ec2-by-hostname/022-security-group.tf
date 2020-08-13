@@ -2,7 +2,7 @@
 
 # Default administration port
 resource "aws_security_group" "terraform-default" {
-  for_each = var.vpc_info
+  for_each = { for vpc in var.vpcs : vpc => var.vpc_info[vpc] }
 
   name        = each.key
   vpc_id      = aws_vpc.vpcs[each.key].id
