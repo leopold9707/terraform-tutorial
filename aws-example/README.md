@@ -7,7 +7,7 @@
 * Make credential file at "~/.aws/credentials"
 
 ```
-$ mkdir ~/.aws
+$ mkdir -p ~/.aws
 $ vi ~/.aws/credentials
 [default]
 aws_access_key_id=AB67...45Z
